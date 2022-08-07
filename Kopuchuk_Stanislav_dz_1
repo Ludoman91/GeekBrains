@@ -1,0 +1,14 @@
+time = int(input("Время в секундах "))
+day = time // 86400
+hours = time // 3600 - day * 24
+minutes = (time - day * 24 * 3600 - hours * 3600) // 60
+seconds = time - (hours * 3600 + minutes * 60) - (day * 24 * 3600)
+
+if time > 86399:
+ print(day, 'дн', hours,'час',minutes,'мин',seconds,'сек')
+if 3599 < time < 86400:
+  print(hours,'час',minutes,'мин',seconds,'сек')
+if 59 < time < 3600:
+  print(minutes,'мин',seconds,'сек')
+if time < 60:
+  print(seconds,'сек')
