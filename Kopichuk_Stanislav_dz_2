@@ -1,1 +1,88 @@
+# Задание №1
+multiplication = 15 * 3
+if type(multiplication) is str:
+  print('multiplication str')
+if type(multiplication) is int:
+  print('multiplication int')
+if type(multiplication) is float:
+  print('multiplication float')
 
+division = 15 / 3
+if type(division) is str:
+  print('division str')
+if type(division) is int:
+  print('division int')
+if type(division) is float:
+  print('division float')
+
+integral_division = 15 // 2
+if type(integral_division) is str:
+  print('integral_division str')
+if type(integral_division) is int:
+  print('integral_division int')
+if type(integral_division) is float:
+  print('integral_division float')
+
+degree = 15 ** 2
+if type(degree) is str:
+  print('degree str')
+if type(degree) is int:
+  print('degree int')
+if type(degree) is float:
+  print('degree float')
+
+print()
+
+num1 = 15 * 3
+num2 = 15 / 3
+num3 = 15 // 2
+num4 = 15 ** 2
+print(type(num1), type(num2), type(num3), type(num4))
+
+print()
+# Задание №2
+my_list = ['в', '5', 'часов', '17', 'минут', 'температура', 'воздуха', 'была', '+5', 'градусов']
+i = 1
+while i < len(my_list):
+    my_list.insert(i, '"')
+    i += 2
+my_list.pop(9)
+del my_list[10]
+my_list.pop(11)
+for i in my_list:
+    print(i, end=' ')
+
+print()
+print()
+# Задание №4
+my_list = ['инженер-конструктор Игорь', 'главный бухгалтер МАРИНА', 'токарь высшего разряда нИКОЛАй', 'директор аэлита']
+for position in my_list:
+    print('Привет', position.split()[-1].title(),'!')
+
+print()
+# Задание №5
+numbs = [26.51, 38.9, 162, 05.85, 267.21, 698.16, 42.79, 591, 128.85, 08.75]
+numbs.sort()
+for numb in numbs:
+    rur = int(numb)
+    kop = (numb - int(numb)) * 100
+    print(f'{rur}руб. {kop:02.0f}коп.')
+
+print()
+
+numbs = [26.51, 38.9, 162, 05.85, 267.21, 698.16, 42.79, 591, 128.85, 08.75]
+numbs.sort(reverse=True)
+for numb in numbs:
+    rur = int(numb)
+    kop = (numb - int(numb)) * 100
+    print(f'{rur}руб. {kop:02.0f}коп.')
+
+print()
+
+numbs = [26.51, 38.9, 162, 05.85, 267.21, 698.16, 42.79, 591, 128.85, 08.75]
+numbs.sort(reverse=True)
+max_numbers = numbs[:5]
+for numb in max_numbers:
+    rur = int(numb)
+    kop = (numb - int(numb)) * 100
+    print(f'{rur}руб. {kop:02.0f}коп.')
